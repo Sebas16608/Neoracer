@@ -11,3 +11,8 @@ def atras():
     return "Debe retroceder"
 
 
+carrito = True
+
+#servira para hacer un boton
+while carrito:
+    print("Que deseas hacer? \n 1. ")
