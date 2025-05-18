@@ -17,9 +17,16 @@ class carrito:
 
 
 
-boton = input("")
+x = True
 
-while True:
+while x:
     print("Elija una opcion \n1. Encender\n 2. Piloto automatico\n 3. \n")
     opcion = int(input("-> "))
-    
+
+    while opcion not in (1, 2, 3, 4):
+        print("Opcion no valida, vuelva a intentarlo \n")
+
+        opcion = int(input("-> "))
+
+    if opcion == 1:
+        print("Presione ")
