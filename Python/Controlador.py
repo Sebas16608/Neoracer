@@ -14,3 +14,12 @@ class carrito:
     def derecha(self):
         self.estado = "Derecha"
         return "El carrito gira a la derecha"
+
+
+
+boton = input("")
+
+while True:
+    print("Elija una opcion \n1. Encender\n 2. Piloto automatico\n 3. \n")
+    opcion = int(input("-> "))
+    
