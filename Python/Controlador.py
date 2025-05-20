@@ -1,32 +1,23 @@
-class carrito:
+class Carrito:
     def __init__(self):
         self.estado = "Detenido"
 
     def avanzar(self):
         self.estado = "Avanzar"
-        return "El carrito avanzar"
+        return "El carrito está avanzando"
+
     def retroceder(self):
         self.estado = "Retroceder"
-        return "El carrito retrocede"
+        return "El carrito está retrocediendo"
+
     def izquierda(self):
         self.estado = "Izquierda"
         return "El carrito gira a la izquierda"
+
     def derecha(self):
         self.estado = "Derecha"
         return "El carrito gira a la derecha"
 
-
-
-x = True
-
-while x:
-    print("Elija una opcion \n1. Encender\n 2. Piloto automatico\n 3. \n")
-    opcion = int(input("-> "))
-
-    while opcion not in (1, 2, 3, 4):
-        print("Opcion no valida, vuelva a intentarlo \n")
-
-        opcion = int(input("-> "))
-
-    if opcion == 1:
-        print("Presione ")
+    def piloto(self):
+        self.estado = "Piloto Automático"
+        return "Se activó el piloto automático"
