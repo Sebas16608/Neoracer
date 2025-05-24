@@ -7,7 +7,7 @@ boostrap = Bootstrap(app)
 
 @app.route('/')
 def home():
-    return render_template("main.html")
+    return render_template("base.html")
 
 @app.route('/informacion')
 def info():
