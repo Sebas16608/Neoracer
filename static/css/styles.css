@@ -1,5 +1,9 @@
 body {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Hack', sans-serif;
+    color: 	#FFFFFF;
+    background-color: #121212;
+}
 
-    background-color: aqua;
+.titulo {
+    text-align: center;
 }
