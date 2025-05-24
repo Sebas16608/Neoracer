@@ -1,6 +1,8 @@
 from flask import Flask, request, make_response, redirect, render_template
-
+from flask_bootstrap import Bootstrap
 app = Flask(__name__)
+
+boostrap = Bootstrap(app)
 
 
 @app.route('/')
@@ -12,4 +14,4 @@ def info():
     return render_template("info.html")
 
 
-app.run(host="0.0.0.0", port="3000", debug=True)
+app.run(host="0.0.0.0", port="1995", debug=True)
