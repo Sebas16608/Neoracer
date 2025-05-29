@@ -1,0 +1,50 @@
+body {
+    background-color: black;
+    color: #ffffff;
+}
+
+.info {
+    margin-bottom: auto;
+    margin: 18%;
+    background-color: green;
+}
+
+.avanzar {
+    width: 20%;
+    height: 180px;
+    background-color: blue;
+    color: #ffffff;
+    font-size: xx-large;
+}
+
+.retroceder {
+    width: 20%;
+    height: 180px;
+    background-color: red;
+    color: #ffffff;
+    font-size: xx-large;
+}
+
+.right {
+    width: 20%;
+    height: 180px;
+    background-color: green;
+    color: #ffffff;
+    font-size: xx-large;
+}
+
+.left {
+    width: 20%;
+    height: 180px;
+    background-color: skyblue;
+    color: #ffffff;
+    font-size: xx-large;
+}
+
+.PA {
+    width: 40%;
+    height: 180px;
+    background-color: gold;
+    color: #ffffff;
+    font-size: xx-large;
+}

@@ -1,0 +1,20 @@
+{%extends 'bootstrap/base.html'%}
+
+{%block head%}
+{{super()}}
+
+<link rel="stylesheet" href="{{url_for('static',filename='css/styles2.css')}}">
+    <title>Controlador Deepracer</title>
+{%endblock%}
+{%block body%}
+<h1>Hola</h1>
+<center>
+<button class="avanzar">Avanzar</button>
+    <button class="right">Derecha</button>
+<br>
+<button class="retroceder">Retroceder</button>
+    <button class="left">Izquierda</button>
+<br>
+<button class="PA">Piloto Automatico</button>
+</center>
+{%endblock%}
