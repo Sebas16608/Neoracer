@@ -1,19 +1,20 @@
-{%extends('bootstrap/base.html')%}
+{%extends ('bootstrap/base.html')%}
+
 {%block head%}
 {{super()}}
-    <link rel="stylesheet" href="{{url_for('static',filename='css/styles.css')}}">
+
+<link rel="stylesheet" href="{{url_for('static',filename='css/styles.css')}}">
     <title>Proyecto Deepracer</title>
 {%endblock%}
+
 {%block body%}
-    <main>
-        <div class="titulo">
-            <h1 class="titulo">Hola bienvenido :D</h1>
-                <h2>A donde quieres ir?</h2>
-                <div class="navbar">
-                {%block navbar%}
-                    {%include 'navbar.html'%}
-                {%endblock%}
-                </div>
-        </div>
-    </main>
+
+<h1>Hola Bienvenido</h1>
+<br>
+<h2>¿A donde te diriges?</h2>
+{%block navbar%}
+  {%include ('navbar.html')%}
 {%endblock%}
+{%endblock%}
+
+  

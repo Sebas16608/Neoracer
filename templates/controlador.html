@@ -1,20 +1,25 @@
-{%extends 'bootstrap/base.html'%}
+{%extends('bootstrap/base.html')%}
 
 {%block head%}
 {{super()}}
-
-<link rel="stylesheet" href="{{url_for('static',filename='css/styles2.css')}}">
-    <title>Controlador Deepracer</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='css/styles2.css')}}">
+    <title>Controlador</title>
 {%endblock%}
 {%block body%}
-<h1>Hola</h1>
-<center>
-<button class="avanzar">Avanzar</button>
-    <button class="right">Derecha</button>
-<br>
-<button class="retroceder">Retroceder</button>
-    <button class="left">Izquierda</button>
-<br>
-<button class="PA">Piloto Automatico</button>
-</center>
+<div class="control-panel">
+  <!-- Fila superior -->
+  <div class="control-row">
+    <button class="control-btn btn-avanzar">AVANZAR ↑</button>
+    <button class="control-btn btn-derecha">DERECHA →</button>
+  </div>
+  
+  <!-- Fila inferior -->
+  <div class="control-row">
+    <button class="control-btn btn-retroceder">RETROCEDER ↓</button>
+    <button class="control-btn btn-izquierda">← IZQUIERDA</button>
+  </div>
+  
+  <!-- Botón especial -->
+  <button class="control-btn btn-auto">PILOTO AUTOMÁTICO ⚙️</button>
+</div>
 {%endblock%}

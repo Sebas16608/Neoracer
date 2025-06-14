@@ -1,19 +1,52 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+{%extends('bootstrap/base.html')%}
+
+{%block head%}
+{{super()}}
     <link rel="stylesheet" href="{{url_for('static',filename='css/styles2.css')}}">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Informacion-deepracer</title>
-</head>
-<body>
-    <main>
+{%endblock%}
+{%block body%}
+    <main class="web">
         <section>
             <div>
+                <h2>
                 <p class="titulo">¿Un Deepracer con arduino y APIs?</p>
-                <p class="contenido1">Pues si, si que se puede, pero, primero ¿sabes que es un Deepracer?</p>
+                </h2>
+                <p class="contenido1">Pues si, si que se puede, pero, primero ¿sabes que es un Deepracer?
+                    ahh si se me olvidaba, tambien sabes que es una API no? jajaja no te preocupes si no sabes que es
+                    asi que yo te explico.
+                </p> 
+                <br>
             </div>
+            <div class="div-api">
+                <h2 class="api">¿Qué es una API?</h2>
+                <p>Una API como su nombre en inglés lo indica application programming interface
+                    o en español que significa interfaz de programación de aplicaciones, que quiere decir esto
+                    esto significa que una API es la parte de un codigo que hace que dos aplicaciones se comuniquen entre si.
+                </p>
+                <br>
+                <p class="parrafo-api">Como sabes la comunicacion es transmitir informacion entre un emisor y un receptor
+                    esto quiere decir que dos aplicaciones se estaran transmitiendo informacion entre si, para 
+                    hacerlo mas facil de entender te lo explicare asi. Digamos que tienes hambre y no quieres
+                    cocinar y tampoco salir de casa por comida asi que decides llamar a Mcdonals por ejemplo
+                    desde una aplicacion entonces para que me entiendas la informacion que necesitamos la tiene
+                    un servidor externo que en este caso seria Mcdonals y nuestra aplicacion que necesita la
+                    informacion seria nuestra casa entonces ¿Cual es la API en este ejemplo? la respuesta es
+                    sencilla la informacion seria la hamburguesa que pediste y la API seria el repartidor que 
+                    llevara la hamburguesa (informacion) desde Mcdonals (servidor) hasta tu casa (tu computadora)
+                </p>
+            </div>
+            <div class="deepracer">                <br>
+                <h3>Bien ahora que ya sabes que es y como funciona una API te explicare que es un Deepracer</h3>
+                <br>
+                <h2>
+                    Bien, entonces ¿Qué es un Deepracer?
+                </h2>
+                <br>
+                <p>Un Deepracer es un carrito autonomo que funciona con IA (inteligencia artificial) creado y programado por AWS</p>
+                </div>
         </section>
     </main>
-</body>
-</html>
+{%endblock%}
