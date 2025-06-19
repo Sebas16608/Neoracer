@@ -5,11 +5,11 @@
 Deepracer
 {%endblock%}
 </title>
-
+<link rel="stylesheet" href="{{url_for('static',filename='css/styles.css')}}">
 {%block navbar%}
  <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
   <div class="container-fluid">
-    <img class="navbar-brand" src="{url_for(statics/images/logo.png)}"
+    <a class="navbar-brand" href="{{url_for('index')}}">Neoracer</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -31,5 +31,8 @@ Deepracer
 {%endblock%}
 
 {%block content%}
-    El mundo de la tecnologia esta cada vez mas avanzado que antes
+    <center><h1>El chimador</h1></center>
+    {%block contenido%}
+      {%include 'contenido.html'%}
+    {%endblock%}
 {%endblock%}
