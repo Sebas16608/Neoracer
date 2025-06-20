@@ -1,16 +1,8 @@
-# Entornos virtuales
 venv/
-env/
-.env/
-
-# Archivos de Python compilados
 __pycache__/
-*.py[cod]
-
-# Archivos de sistema
+*.pyc
+*.pyo
+*.pyd
 .DS_Store
-Thumbs.db
-
-# Archivos de configuración del editor
-.vscode/
-.idea/
+*.sqlite3
+*.log
