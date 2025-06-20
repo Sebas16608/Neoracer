@@ -1,19 +1,25 @@
-{%extends 'base.html'%}
+{% extends 'base.html' %}
 
-{%block navbar%}
- <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+{% block navbar %}
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
   <div class="container-fluid">
-    <a class="navbar-brand" href="{{url_for('index')}}">Neoracer</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+    <a class="navbar-brand" href="{{ url_for('index') }}">Neoracer</a>
+    
+    <!-- Botón hamburguesa para dispositivos pequeños -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+      aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="collapsibleNavbar">
-      <ul class="navbar-nav">
+
+    <!-- Menú colapsable -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-sm-0">
         <li class="nav-item">
           <a class="nav-link" href="https://www.google.com">Google</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="https://www.chatgpt.com">chat gpt</a>
+          <a class="nav-link" href="https://www.chatgpt.com">Chat GPT</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="https://www.youtube.com">YouTube</a>
@@ -21,5 +27,8 @@
       </ul>
     </div>
   </div>
-</nav> 
-{%endblock%}
+</nav>
+
+<!-- Bootstrap JS (solo incluir si no lo tenés en base.html) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+{% endblock %}
