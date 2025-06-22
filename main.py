@@ -14,21 +14,17 @@ def tecno():
 def api():
     return render_template("api.html")
 
-@app.route("/Neoracer")
-def neo():
-    return render_template("neo.html")
-
-@app.route("/Funcionamiento")
-def funcion():
-    return render_template("funcion.html")
-
 @app.route("/piloto-automatico")
 def piloto():
     return render_template("piloto.html")
 
-@app.route("/De-que-servirá")
-def futuro():
-    return render_template("futuro.html")
+@app.route("/Componentes")
+def comp():
+    return render_template("componentes.html")
+
+@app.route("/Neoracer")
+def neo():
+    return render_template("neo.html")
 
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=5000, debug=True)
+    app.run(host="0.0.0.0", port=5000, debug=True) 
